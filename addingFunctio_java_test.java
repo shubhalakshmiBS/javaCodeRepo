@@ -1,17 +1,17 @@
 Unit Test Case:
-        
-        import org.junit.Assert;
-        import org.junit.Test;
-        
-        public class AddNumbersTest {
-        
-            @Test
-            public void testAddNumbers() {
-                int number = 20;
-                int expected = 210;
-                int actual = AddNumbers.addNumbers(number);
-                Assert.assertEquals(expected, actual);
-            }
-        }
-        
-        Code coverage: 100%
+
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+public class AddNumbersTest {
+
+    @Test
+    public void testAddNumbers() {
+        int num = 5;
+        int expectedSum = 15;
+        int actualSum = AddNumbers.addNumbers(num);
+        assertEquals(expectedSum, actualSum);
+    }
+}
+
+Code coverage: 100% (1 line covered out of 1 total line)
